@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 228, 228);
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: darkblue;
+    background-image: linear-gradient( 115deg, rgba(53, 53, 228, 0.8), rgba(136, 136, 206, 0.7)), url(laptop-1205256_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+h1#title {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1.text-center {
+    text-align: center;
+}
+
+p#description {
+    font-style: italic;
+    text-align: center;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(201, 197, 197, 0.4);
+}
+
+h1,
+p {
+    margin-top: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+
+form#survey-form {
+    padding: 20px;
+    background-color: rgb(1, 1, 31);
+    border-radius: 0.25rem;
+    width: 50%;
+    margin: auto;
+}
+
+input[type=text],
+input[type=number],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button#submit {
+    width: 100%;
+    background-color: brown;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#submit:hover {
+    background-color: #45a049;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 20px;
+}
+
+textarea#comments {
+    width: 100%;
+    height: 200px;
+}
